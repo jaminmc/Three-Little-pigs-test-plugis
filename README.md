@@ -122,7 +122,7 @@ Clone this repo locally, then navigate into the The-Three-Little-Pigs directory 
 
 	`cp ./config.example.yml ~/.siriproxy/config.yml`  
 
-7. Edit ~/.siriproxy/config.yml and put your database info
+7. Edit `~/.siriproxy/config.yml` and put your database info
 
         db_host: 'localhost'
         db_user: 'root'
@@ -161,7 +161,7 @@ Clone this repo locally, then navigate into the The-Three-Little-Pigs directory 
 
 10. Create the tables needed for the database. Do this everytime you make a new install/update. Keep in mind that this will delete all DATA on the tables such as keys and config data
 
-        `siriproxy gentables`
+        siriproxy gentables
 
 11. Start SiriProxy (must start as root because it uses a port < 1024):  
 
