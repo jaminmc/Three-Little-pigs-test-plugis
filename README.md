@@ -1,4 +1,4 @@
-The Three Little Pigs - Siri Proxy by Jimmy Kane
+The Three Little Pigs - Siri Proxy by Jimmy Kane :-)
 ==========
 
 About
