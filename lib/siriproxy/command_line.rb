@@ -169,7 +169,7 @@ class SiriProxy::CommandLine
     else
       branch_opt = @branch ? "-b #{@branch}" : ""
       @branch = "master" if @branch == nil
-      puts "=== Installing latest code from git://github.com/jaminmc/SiriProxy.git [#{@branch}] ==="
+      puts "=== Installing latest code from git://github.com/jimmykane/The-Three-Little-Pigs-Siri-Proxy.git [#{@branch}] ==="
     
       tmp_dir = "/tmp/SiriProxy.install." + (rand 9999).to_s.rjust(4, "0")
     
