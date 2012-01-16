@@ -152,6 +152,7 @@ Clone this repo locally, then navigate into the The-Three-Little-Pigs directory 
 	`bash gencerts.sh`
 
 
+
 8. Install `~/.siriproxy/ca.crt` on all your devices including iphone4s etc. This can easily be done by emailing the file to yourself and clicking on it in the iPhone email app. Follow the prompts.
 
 9. Bundle SiriProxy (this should be done every time you change the config.yml):  
