@@ -75,6 +75,11 @@ class SiriProxy
             end
           end
         }
+      rescue Interrupt
+        puts "Closing connections and exiting"
+        EventMachine.stop
+        exit
+      
       rescue RuntimeError => err
         if err.message == "no acceptor"
           raise "Cannot start the server on port #{$APP_CONFIG.port} - are you root, or have another process on this port already?"
