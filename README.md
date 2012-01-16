@@ -16,15 +16,25 @@ Features
 --------------------
 
 -Plugins api and config capable (NEW)
+
 -MySql Database connection support: Supports MySQL database connection for storing configuration,keys and runtime statistics. Now you can edit and build that (NEW)
+
 -Multiple key support: You can connect more than 1 iPhone4S and store even more keys. The more the keys, the more the clients!
+
 -Key Throttling: Each client uses a different key, if more than one Keys are available. The throttler makes sure that each Key is throttled thus enabling several client registration and assistant object creation.
+
 -KeyLoad Safeguard: Never worry about how many people use your iPhone4S key. Each Key has a maximum keyload. Even when the key is still valid, if the keyload limit is exceeded, the safeguard disables the key and protects the iPhone4S from getting banned.
+
 -KeyLoad Aware: Checks what key is not "Hot" anymore and periodically decreases the load, thus re-enabling Safeguarded Keys
+
 -Web interface and monitoring: Always know what is happening without a CLI! With a web interface you can check statistics such as active connections, valid keys, server load, keyload etc.
+
 -One certificate for all devices: Both Siri Capable devices (currently only iPhone4s) and older devices are using the same certificate and the same port (443 default for SSL)
+
 -One instance of the server: Due to one certificate you can run only one instance of the server.
+
 -Bug Free (I hope...):-) Never worry if the server has crashed. Most of the bugs that were causing the server to crash are fixed now.
+
 
 Notice About Plugins
 --------------------
@@ -123,17 +133,17 @@ Clone this repo locally, then navigate into the The-Three-Little-Pigs directory 
 
         replace lines:
 
-            `commonName  = Common Name (eg, YOUR name)
-            commonName_max  = 64`
+            commonName  = Common Name (eg, YOUR name)
+            commonName_max  = 64
 
         with:
 
-            `0.commonName = Common Name (eg, YOUR name)
+            0.commonName = Common Name (eg, YOUR name)
             0.commonName_default = guzzoni.apple.com
             0.commonName_max = 64
             1.commonName = Common Name (eg, YOUR name)
             1.commonName_default = (IP or HOSTNAME of Proxy Server) 
-            1.commonName_max = 64`
+            1.commonName_max = 64
             
        Dont forget to put you ip/hostname above
 
@@ -228,18 +238,31 @@ Acknowledgements
 **Credits, greetings and big thanks to all the following.. RESPECT**
 
   @plamoni ([http://twitter.com/plamoni])
+
   @kmsbueromoebel ([http://ketchup-mayo-senf.de/blog/])
+
   @WouterDS ([http://twitter.com/WouterDS])
+
   @thpryrchn ([[https://twitter.com/thpryrchn])
+
   @Grant Paul (chpwn) ([https://twitter.com/chpwn])
+
   @Pod2g ([https://twitter.com/pod2g])
+
   @iH8sn0w ([https://twitter.com/iH8sn0w])
+
   @MuscleNerd ([https://twitter.com/MuscleNerd ])
+
   @comex ([https://twitter.com/comex])
+
   @HisyamNasir ([https://twitter.com/HisyamNasir])
+
   @Zach Christopoulos ([https://twitter.com/ChristopoulosZ])
+
   @Stan Hutcheon ([https://twitter.com/StanHutcheon])
+
   @THiZIZMiZZ ([https://twitter.com/THiZIZMiZZ])
+
   @iP1neapple ([https://twitter.com/iP1neapple])
   
 
