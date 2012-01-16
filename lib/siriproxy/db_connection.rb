@@ -16,7 +16,7 @@ def db_connect()
 			puts "Error code: #{e.errno}"
     			puts "Error message: #{e.error}"
      			puts "Error SQLSTATE: #{e.sqlstate}" if e.respond_to?("sqlstate")
-			puts "We could not establish a connection to the dataset.\nInfo: Check db_connection.rb and make sure  the config is ok"
+			puts "We could not establish a connection to the dataset.\nInfo: Make sure you have created the database and edited options"
      			exit(1)
 		end
 end

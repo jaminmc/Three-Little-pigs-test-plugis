@@ -8,8 +8,8 @@ then
 fi
 
 # Feel free to change any of these defaults
-countryName="US"
-stateOrProvinceName="Missouri"
+countryName="GR"
+stateOrProvinceName="Athens"
 localityName=""
 organizationName="Siri Proxy"
 organizationalUnitName=""
@@ -66,10 +66,10 @@ yes | openssl ca -policy policy_anything -out $TMP_DIR/newcert.pem -config $SIRI
 echo "Removing passphrase from guzzoni.apple.com key"
 yes | openssl rsa -in $TMP_DIR/newkey.pem -out $SIRI_PROXY_SETTINGS/server.passless.key -passin pass:1234 >> $LOG_FILE 2>> $LOG_FILE
 
-echo "Cleaning up..."
-mv $TMP_DIR/newcert.pem $SIRI_PROXY_SETTINGS/server.passless.crt
-mv $TMP_CA_DIR/cacert.pem $SIRI_PROXY_SETTINGS/ca.pem
-rm -rf $TMP_DIR/new{key,req}.pem $TMP_CA_DIR $TMP_DIR/ca.args
+#echo "Cleaning up..."
+#mv $TMP_DIR/newcert.pem $SIRI_PROXY_SETTINGS/server.passless.crt
+#mv $TMP_CA_DIR/cacert.pem $SIRI_PROXY_SETTINGS/ca.pem
+#rm -rf $TMP_DIR/new{key,req}.pem $TMP_CA_DIR $TMP_DIR/ca.args
 
 echo "Done! (For details on any errors, check '${LOG_FILE}')"
 echo "-------------------------------------------------------------"
