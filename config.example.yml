@@ -1,5 +1,9 @@
 port: 443
-log_level: 0
+log_level: 1
+DB_HOST: 'localhost'
+DB_USER: 'root'
+DB_PASS: 'password'
+DB_DATABASE: 'siri'
 plugins:
     # NOTE: run bundle after changing plugin configurations to update required gems
 

@@ -1,10 +1,10 @@
 # -*- encoding : utf-8 -*-
 require 'mysql'
 #DATABASE CONNECTION 
-DB_HOST='localhost'
-DB_USER='root'
-DB_PASS='19836669'
-DB_DATABASE='siri'
+DB_HOST=$APP_CONFIG.db_host
+DB_USER=$APP_CONFIG.db_user
+DB_PASS=$APP_CONFIG.db_pass
+DB_DATABASE=$APP_CONFIG.db_database
 
 def db_connect() 
 		begin
